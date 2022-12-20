@@ -1,4 +1,149 @@
-@charset "UTF-8";
+body {
+  color: #32353C;
+  font-family: Helvetica, sans-serif, Arial;
+}
 
+.header {
+  background-image: url(./images/bg_home.png);
+  padding: 300px 0;
+}
+.header__inner {
+  max-width: 1920px;
+  width: 88.8%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header__top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.header__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  list-style: none;
+}
 
-body {}
+.list__list {
+  font-weight: bold;
+  list-style: none;
+  text-decoration: none;
+}
+
+.shop__inner {
+  max-width: 1920px;
+  width: 88.8%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.shop__card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.contents__btn {
+  padding: 21px 46px;
+  background-color: #32353C;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 2px;
+  display: inline-block;
+}
+.contents__category {
+  font-size: 0.875rem;
+}
+.contents__title {
+  font-size: 2rem;
+}
+.contents__price {
+  font-size: 2rem;
+  color: #B79B6C;
+}
+.contents__text {
+  display: flex;
+}
+
+.item__sub {
+  position: absolute;
+  padding: 14px 32px;
+  background-color: #B79B6C;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 2px;
+  display: inline-block;
+}
+.item__img {
+  width: 46.25%;
+  height: auto;
+}
+
+.instagram__title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.instagram__inner {
+  max-width: 1920px;
+  width: 88.8%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banner__inner {
+  max-width: 1920px;
+  width: 88.8%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.banner__contents {
+  color: #fff;
+  background-image: url(./images/bg_post01.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 7em 3em;
+}
+.banner__contents--gold {
+  background-image: none;
+  background-color: #B79B6C;
+}
+.banner__sub {
+  font-size: 0.875rem;
+}
+.banner__title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.banner__btn {
+  padding: 21px 46px;
+  background-color: #32353C;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.footer {
+  background-color: #32353C;
+  padding: 5.25em;
+}
+.footer__inner {
+  max-width: 1920px;
+  width: 88.8%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer__text {
+  color: #fff;
+  text-align: center;
+  font-size: 0.875rem;
+}
+/*# sourceMappingURL=style.css.map */

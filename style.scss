@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+$color-gold: #B79B6C;
+$color-bg: #F4F4F4;
+$color-black: #32353C;
+$color-white: #fff;
+
+@mixin inner() {
+    max-width: 1920px;
+    width: 88.8%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin flex($a: stretch, $j: space-between) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $j;
+    align-items: $a;
+}
+
+@mixin contents() {
+
+    @include btn();
+}
+
+@mixin btn($p: 21px 46px, $c: $color-black) {
+    padding: $p;
+    background-color: $c;
+    color: $color-white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 2px;
+    display: inline-block;
+}
+
+body {
+    color: $color-black;
+    font-family: Helvetica, sans-serif, Arial;
+}
+
+
+.header {
+    background-image: url(./images/bg_home.png);
+    padding: 300px 0;
+
+    &__inner {
+        @include inner()
+    }
+
+    &__top {
+        @include flex();
+        background-color: rgba($color: #fff, $alpha: 0.8);
+    }
+
+    &__list {
+        @include flex();
+
+        list-style: none;
+    }
+}
+
+.list {
+    &__list {
+        font-weight: bold;
+        list-style: none;
+        text-decoration: none;
+    }
+}
+
+.shop {
+    &__inner {
+        @include inner()
+    }
+
+    &__card {
+        @include flex();
+    }
+}
+
+.contents {
+    &__btn {
+        @include btn();
+    }
+
+    &__category {
+        font-size: (14/16)+rem;
+    }
+
+    &__title {
+        font-size: (32/16)+rem;
+    }
+
+    &__price {
+        font-size: (32/16)+rem;
+        color: $color-gold;
+    }
+
+    &__text {
+        display: flex;
+    }
+
+}
+
+.item {
+    &__sub {
+        position: absolute;
+        @include btn($p: 14px 32px,
+            $c: $color-gold);
+    }
+
+    &__img {
+        width: 46.25%;
+        height: auto;
+    }
+}
+
+.instagram {
+    &__title {
+        text-align: center;
+        font-size: (32/16)+rem;
+        font-weight: bold;
+    }
+
+    &__inner {
+        @include inner();
+    }
+
+}
+
+.banner {
+    &__inner {
+        @include inner();
+    }
+
+    &__contents {
+        color: $color-white;
+        background-image: url(./images/bg_post01.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 7em 3em;
+
+        &--gold {
+            background-image: none;
+            background-color: $color-gold;
+        }
+    }
+
+    &__sub {
+        font-size: (14/16)+rem;
+    }
+
+    &__title {
+        font-size: (32/16)+rem;
+        font-weight: bold
+    }
+
+    &__btn {
+        @include btn();
+    }
+}
+
+.footer {
+    background-color: $color-black;
+    padding: 5.25em;
+
+    &__inner {
+        @include inner();
+    }
+
+    &__text {
+        color: $color-white;
+        text-align: center;
+        font-size: (14/16)+rem;
+    }
+}
